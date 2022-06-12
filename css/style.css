@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+
+    background: rgba(128, 255, 133, 1.0);
+    background: -webkit-linear-gradient(top left, rgba(128, 255, 133, 1.0), rgba(49, 73, 45, 1.0));
+    background: -moz-linear-gradient(top left, rgba(128, 255, 133, 1.0), rgba(49, 73, 45, 1.0));
+    background: linear-gradient(top bottom right, rgba(128, 255, 133, 1.0), rgba(49, 73, 45, 1.0));
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: "Charis SIL", serif;
+    margin: 170px;
+}
+
+
+.card {
+    background-color: white;
+    max-width: 700px;
+    border-radius: 10px;
+    margin-top: 70px;
+}
+
+.css-frameworks {
+    background-image: url("/images/css-frameworks-screenshot.png");
+    background-size: cover;
+    height: 350px;
+    border-radius: 10px 10px 0 0;
+    
+}
+
+.js-ca {
+    background-image: url("/images/js-ca-screenshot.png");
+    background-size: cover;
+    height: 350px;
+    border-radius: 10px 10px 0 0;
+    
+}
+
+.js-frameworks {
+    background-image: url("/images/js-frameworks-screenshot.png");
+    background-size: cover;
+    height: 350px;
+    border-radius: 10px 10px 0 0;
+    
+}
+
+.card-info {
+    padding: 2em;
+}
+
+
+h1 {
+    font-family: "Charis SIL", serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: rgb(19, 19, 19);
+
+}
+
+h4 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.button {
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+    font-weight: 700;
+    background: rgba(128, 255, 133, 1.0);
+    padding: 1em;
+    width: 100%;
+}
+
+a:hover {
+    background: rgba(49, 73, 45, 1.0);
+    color: white;
+    transition: 0.3s;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+@media (max-width: 850px) {
+    .container {
+        margin: 70px;
+    }
+    
+    .cards {
+        margin: 0;
+    }
+
+    .css-frameworks, .js-ca, .js-frameworks {
+        height: 300px;
+    }
+}
+
+@media (max-width: 450px) {
+    .container {
+        margin: 20px;
+
+    }
+
+    .css-frameworks, .js-ca, .js-frameworks {
+        height: 200px;
+    }
+}
+
+
